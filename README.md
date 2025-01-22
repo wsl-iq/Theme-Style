@@ -65,7 +65,7 @@ Allows you to download all environments in one go
 ### Installation (Kali Linux)
 
 ```
-$ git clone https://github.com/MohmmadALbaqer/ThemeStyle.git
+$ git clone https://github.com/wsl-iq/Theme-Style.git
 $ cd ThemeStyle
 $ sudo python3 Style.py
 ```
@@ -77,6 +77,6 @@ $ sudo python3 Style.py
 
 - [![Github](https://img.shields.io/badge/Github-wsl-iq-green?style=for-the-badge&logo=github)](https://github.com/wsl-iq)
 
-
 - [![instagram](https://img.shields.io/badge/Instagram-wsl.iq-green?style=for-the-badge&logo=instagram)](https://instagram.com/wsl.iq)
+
 
