@@ -3,7 +3,7 @@
 ### ScreenShot
 
 
-![Logo](ThemeStyleKaliLinux.png)
+![Logo](ThemeStyleIMAGE.png)
 
 
 ```
