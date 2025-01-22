@@ -75,8 +75,8 @@ $ sudo python3 Style.py
 
 ## [~] Find Me on :
 
-- [![Github](https://img.shields.io/badge/Github-MohnnadALbaqer-green?style=for-the-badge&logo=github)](https://github.com/MohmmadALbaqer)
+- [![Github](https://img.shields.io/badge/Github-wsl.iq-green?style=for-the-badge&logo=github)](https://github.com/wsl.iq)
 
 
-- [![instagram](https://img.shields.io/badge/Instagram-r94xs-green?style=for-the-badge&logo=instagram)](https://instagram.com/r94xs)
+- [![instagram](https://img.shields.io/badge/Instagram-wsl.iq-green?style=for-the-badge&logo=instagram)](https://instagram.com/wsl.iq)
 
