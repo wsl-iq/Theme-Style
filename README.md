@@ -66,7 +66,7 @@ Allows you to download all environments in one go
 
 ```
 $ git clone https://github.com/wsl-iq/Theme-Style.git
-$ cd ThemeStyle
+$ cd Theme-Style
 $ sudo python3 Style.py
 ```
 
