@@ -3,7 +3,7 @@
 ### ScreenShot
 
 
-![Logo](ThemeStyleIMAGE.png)
+![Logo](image/ThemeStyleIMAGE.png)
 
 
 ```
@@ -46,18 +46,18 @@ Allows you to download all environments in one go
 ### kali-desktop-xfce
 
 
-![Logo](kali-desktop-xfce.jpg)
+![Logo](image/kali-desktop-xfce.jpg)
 
 
 ### kali-desktop-gnome
 
 
-![Logo](kali-desktop-gnome.jpg)
+![Logo](image/kali-desktop-gnome.jpg)
 
 ### kali-desktop-kde
 
 
-![Logo](kali-desktop-kde.jpg)
+![Logo](image/kali-desktop-kde.jpg)
 
 
 
