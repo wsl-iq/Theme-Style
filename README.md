@@ -70,6 +70,10 @@ $ cd Theme-Style
 $ sudo python3 Style.py
 ```
 
+### uninstall
+```
+$ bash uninstall.sh
+```
 
 
 
