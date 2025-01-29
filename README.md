@@ -1,4 +1,4 @@
-![Logo](image\\logo.jpeg)
+![Logo](image/logo.jpeg)
 
 ### ScreenShot
 
