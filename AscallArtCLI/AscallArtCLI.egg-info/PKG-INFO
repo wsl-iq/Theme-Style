@@ -1,0 +1,414 @@
+Metadata-Version: 2.4
+Name: AscallArtCLI
+Version: 1.1.1
+Summary: Short description here
+Home-page: https://pypi.org/project/AscallArtCLI/
+Author: Mohammed Al-Baqer
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: License
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+### **AscallArtCLI**
+
+---
+
+- **The `AscallArtCLI` library is a Python library for formatting text in the command line `(CLI)` using `colors`, `backgrounds`, and pre-made `tags`.**
+- **The library aims to make the messages of programs or scripts clearer and more professional for both developers and users.**
+
+---
+
+### **Features**
+- **Multiple text colors `(red, green, blue, yellow, orange, purple, etc.).`**
+- **Colorful `backgrounds` that support most operating systems.**
+- Ready-made tags such as: 
+- `[START]`
+- `[END]`
+- `[sign]`
+- `[Enter]`
+- `[ERROR]`
+- `[INFO]`
+- `[Information]`
+- `[Working]`
+- `[NotWorking]`
+- `[warning]`
+- `[Complete]`
+- `[successfully]`
+- `[Failed]`
+- `[please]`
+- `[Question]`
+- `[Help]`
+- `[other]`
+- `[notice]`
+- `[note]`
+- `[Running]`
+- `[Ready]`
+- `[DONE]`
+- `[Loading]`
+- `[OK]`
+- `[Okay]`
+- `[stop]`
+- `[Critical]`
+- `[paused]`
+- `[Retrying]`
+- `[Skip]`
+- `[SCAN]`
+- `[Chacking]`
+- `[Hacking]`
+- `[security]`
+- `[AI]`
+- `[Press]`
+- `[Confirm]`.
+- **Easy integration with any `CLI` project (tools, scanners, scripts).**
+- **Lightweight library with no external dependencies (Pure Python).**
+
+---
+
+### **Installation**
+
+```
+$ pip install AscallArtCLI
+```
+
+---
+
+### **Linux OR Mac**
+
+```
+$ pip install AscallArtCLI --break-system-packages
+```
+
+### **OR**
+
+```
+pip install -r requirements.txt --break-system-packages
+```
+
+### **OR**
+
+- **This code is for viewing how it is installed automatically in case you encounter problems in the Linux system.**
+
+```bash
+#!/bin/bash
+# -*- coding: utf-8 -*-
+# Copyright (c) 2025
+# By : Mohammed Al-Baqer
+
+set -e
+
+echo "[Virtual Environment Setup]"
+
+# Detect Operating System
+OS=$(uname -s)
+
+# Create Virtual Environment
+python3 -m venv venv
+
+# Activate Virtual Environment
+source venv/bin/activate
+
+# Dry-run installation (test only)
+pip install --dry-run -r requirements.txt
+
+echo ""
+echo "Virtual Environment created successfully"
+echo "[Starting Installation]"
+echo ""
+
+if [[ "$OS" == "Linux" ]]; then
+    # Install with --break-system-packages (⚠ risky)
+    pip install -r requirements.txt --break-system-packages
+elif [[ "$OS" == "Darwin" ]]; then
+    # Darwin = macOS
+    pip install -r requirements.txt
+else
+    echo "⚠ Unsupported OS detected: $OS"
+    echo "Proceeding with normal installation..."
+    pip install -r requirements.txt
+fi
+
+echo ""
+echo "[Installation Completed]"
+```
+---
+```
+$ bash setup.sh
+```
+---
+
+### **How Working?**
+### **Tags**
+```Python
+from AscallArtCLI.Tags import(
+    START,
+    END,
+    sign,
+    Enter,
+    ERROR,
+    INFO,
+    Information,
+    Working,
+    NotWorking,
+    warning,
+    Complete,
+    successfully,
+    Failed,
+    please,
+    Question,
+    Help,
+    other,
+    notice,
+    note,
+    Running,
+    Ready,
+    DONE,
+    Loading,
+    OK,
+    Okay,
+    stop,
+    Critical,
+    paused,
+    Retrying,
+    Skip,
+    SCAN,
+    Chacking,
+    Hacking,
+    security,
+    AI,
+    Press,
+    Confirm
+)
+```
+
+```Python
+
+# Method 1: Import a specific constantfrom Tags import START, END, INFO
+
+print(START + "The process has started now.")
+print(END + "The process is now complete.")
+print(INFO + "There is information.")
+```
+### **OutPut**
+
+```python
+[START] The process has started now.
+[END] The process is now complete.
+[INFO] There is information.
+```
+
+---
+
+```Python
+# Method 2: Import all (thanks to the __all__ list)
+from AscallArtCLI.Tags import *
+
+print(OK + "The operation was successful.")
+print(ERROR + "Something went wrong!")
+```
+
+### **OutPut**
+
+```Python
+[ok] The operation was successful.
+[ERROR] Something went wrong!
+```
+
+---
+
+### **Colors**
+```Python
+S = "\033[0m"        # Reset
+R = "\033[91;1m"     # Red
+G = "\033[92;1m"     # Green
+B = "\033[94;1m"     # Blue
+Y = "\033[93;1m"     # Yellow
+C = "\033[96;1m"     # Cyan
+M = "\033[95;1m"     # Magenta
+W = "\033[97;1m"     # White
+D = "\033[90;1m"     # Grey
+P = "\033[38;5;198m" # Pink
+O = "\033[38;5;202m" # Orange
+```
+
+```Python
+from AscallArtCLI.Colors import(R, G, B, Y, D, C, P, O, W, M, S)
+```
+
+---
+
+### **BackGround**
+
+```Python
+Reset = "\033[0m"         # Reset
+Black = "\033[40m"        # Black
+Dark = "\033[40m"         # Dark
+Red = "\033[41m"          # Red
+Green = "\033[42m"        # Green
+Yellow = "\033[43m"       # Yellow
+Blue = "\033[44m"         # Blue
+Magenta = "\033[45m"      # Magenta
+Cyan = "\033[46m"         # Cyan
+White = "\033[47m"        # White
+Orange = "\033[48;5;202m" # Orange
+Pink = "\033[48;5;198m"   # Pink
+```
+
+```Python
+from AscallArtCLI.BackGround import(Red, Green, Blue, Black, Yellow, Cyan, Orange, Pink, Magenta, White, Reset)
+```
+
+---
+
+### **images**
+
+---
+
+### **BackGround**
+### **Code**
+```Python
+print(f"{Red} B {Green} a {Blue} c {Yellow} k {Cyan} G {White} r {Magenta} o {Orange} u {Pink} n {Red} d {Reset}\n")
+print(Red + " Red    " + Reset)
+print(Green + " Green  " + Reset)
+print(Yellow + " Yellow " + Reset)
+print(Blue + " Blue   " + Reset)
+print(Magenta + " Magenta" + Reset)
+print(Cyan + " Cyan   " + Reset)
+print(White + " White  " + Reset)
+print(Orange + " Orange " + Reset)
+print(Pink + " Pink   " + Reset)
+```
+
+### **review**
+![BackGround](images\BackGround.png)
+
+---
+### **Colors**
+### **Code**
+```Python
+print(f"{R} C {G} o {B} l {Y} o {M} r {P} s\n")
+print(R + " Red    " + R)
+print(G + " Green  " + R)
+print(Y + " Yellow " + R)
+print(B + " Blue   " + R)
+print(M + " Magenta" + R)
+print(C + " Cyan   " + R)
+print(W + " White  " + R)
+print(O + " Orange " + R)
+print(P + " Pink   " + R)
+```
+
+### **review**
+![Colors](images\Colors.png)
+
+---
+
+
+### **Tags**
+
+### **Code**
+```Python
+from AscallArtCLI.Tags import(
+    START,
+    END,
+    sign,
+    Enter,
+    ERROR,
+    INFO,
+    Information,
+    Working,
+    NotWorking,
+    warning,
+    Complete,
+    successfully,
+    Failed,
+    please,
+    Question,
+    Help,
+    other,
+    notice,
+    note,
+    Running,
+    Ready,
+    DONE,
+    Loading,
+    OK,
+    Okay,
+    stop,
+    Critical,
+    paused,
+    Retrying,
+    Skip,
+    SCAN,
+    Chacking,
+    Hacking,
+    security,
+    AI,
+    Press,
+    Confirm
+)
+
+print(START + " AscallArtCLI")
+print(END + " AscallArtCLI")
+print(sign + " AscallArtCLI")
+print(Enter + " AscallArtCLI")
+print(ERROR + " AscallArtCLI")
+print(INFO + " AscallArtCLI")
+print(Information + " AscallArtCLI")
+print(Working + " AscallArtCLI")
+print(NotWorking + " AscallArtCLI")
+print(warning + " AscallArtCLI")
+print(Complete + " AscallArtCLI")
+print(successfully + " AscallArtCLI")
+print(Failed + " AscallArtCLI")
+print(please + " AscallArtCLI")
+print(Question + " AscallArtCLI")
+print(Help + " AscallArtCLI")
+print(other + " AscallArtCLI")
+print(notice + " AscallArtCLI")
+print(note + " AscallArtCLI")
+print(Running + " AscallArtCLI")
+print(Ready + " AscallArtCLI")
+print(DONE + " AscallArtCLI")
+print(Loading + " AscallArtCLI")
+print(OK + " AscallArtCLI")
+print(Okay + " AscallArtCLI")
+print(stop + " AscallArtCLI")
+print(Critical + " AscallArtCLI")
+print(paused + " AscallArtCLI")
+print(Retrying + " AscallArtCLI")
+print(Skip + " AscallArtCLI")
+print(SCAN + " AscallArtCLI")
+print(Chacking + " AscallArtCLI")
+print(Hacking + " AscallArtCLI")
+print(security + " AscallArtCLI")
+print(AI + " AscallArtCLI")
+print(Press + " AscallArtCLI")
+print(Confirm + " AscallArtCLI")
+```
+### **review**
+![Tags](images\Tags.png)
+
+---
+
+### License
+**This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.**
+
+---
+
+### **My WebSite**
+
+**[My WebSite](https://wsl-iq.github.io/)**
+
+

@@ -1,0 +1,1 @@
+recursive-include AscallArtCLI/images *.png *.jpg *.ico

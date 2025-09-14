@@ -1,0 +1,7 @@
+License
+README.md
+setup.py
+AscallArtCLI.egg-info/PKG-INFO
+AscallArtCLI.egg-info/SOURCES.txt
+AscallArtCLI.egg-info/dependency_links.txt
+AscallArtCLI.egg-info/top_level.txt
