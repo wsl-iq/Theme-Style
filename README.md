@@ -15,7 +15,7 @@
 - **BackRound `2021.4`** 
 - **BackRound `2022`** 
 - **BackRound `2023`** 
-- **BackRound `2023 + Bobile`** 
+- **BackRound `2023 + Mobile`** 
 - **BackRound `2024`** 
 - **BackRound `2025`** 
 - **BackRound `All Wallpapers for Kali Linux`** 
